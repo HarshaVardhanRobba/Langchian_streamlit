@@ -76,9 +76,9 @@ if st.button("Send"):
             final_output = combined_chain({"name":input_text})  # Directly call combined_chain
             
             st.subheader("Results")
-            st.write(f"**Movies:** {final_output['movies']}")
-            st.write(f"**DOB:** {final_output['dob']}")
-            st.write(f"**Father:** {final_output['father']}")
+            st.write(f"**Films:** {final_output['movies']}")
+            st.write(f"**Date of Birth:** {final_output['dob']}")
+            st.write(f"**Father is:** {final_output['father']}")
 
             with st.expander("Conversation History"):
                 st.markdown("**Movies Chain History:**")
